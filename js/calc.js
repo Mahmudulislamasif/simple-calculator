@@ -8,18 +8,22 @@ function calculation(calculate)
     const getResultText=document.getElementById('result-value');
     if(calculate=='add-button'){
         getResultText.value=getTextValue+getSecondTextValue;
+        const showResult=document.getElementById('show-add-result');
+        showResult.innerText=getResultText.value;
     }
     else if(calculate=='substract-button')
     {
         getResultText.value=getTextValue-getSecondTextValue;
+        const showResult=document.getElementById("show-sub-result");
+        showResult.innerText=getResultText.value;
     }
     else if(calculate=='multiply-button')
     {
         getResultText.value=getTextValue*getSecondTextValue;
+        const showResult=document.getElementById("show-mul-result");
+        showResult.innerText=getResultText.value;
     }
     }
-   
-
 function add()
 {
     calculation('add-button')
